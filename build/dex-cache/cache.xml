@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<pre-dex-items>
+
+    <item
+        dex="C:\Users\user\AndroidStudioProjects\BMI\app\build\pre-dexed\debug\support-v4-19.1.0-62b1a2fa3cd665a6ec932b0230df7157c1129fa3.jar"
+        jar="C:\Users\user\AppData\Local\Android\android-studio\sdk\extras\android\m2repository\com\android\support\support-v4\19.1.0\support-v4-19.1.0.jar"
+        jumboMode="false"
+        revision="19.0.3"
+        sha1="85f201b380937e61a9dce6ca90ccf6872abbfb67"/>
+    <item
+        dex="C:\Users\user\AndroidStudioProjects\BMI\app\build\pre-dexed\debug\classes-bcbc03a2318f5f6dfaa6830d5644a160b4e1fab8.jar"
+        jar="C:\Users\user\AndroidStudioProjects\BMI\build\exploded-aar\com.android.support\appcompat-v7\19.1.0\classes.jar"
+        jumboMode="false"
+        revision="19.0.3"
+        sha1="3499ceba05ca1f6037c6a2fad73df8f636224a28"/>
+
+</pre-dex-items>
