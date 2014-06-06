@@ -10,7 +10,10 @@ import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.os.Build;
+import android.widget.EditText;
+import android.widget.Toast;
 
+import com.demo.android.bmi.app.R;
 
 
 public class Bmi extends ActionBarActivity {
@@ -19,13 +22,16 @@ public class Bmi extends ActionBarActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bmi);
-        if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction()
-                    .add(R.id.container, new PlaceholderFragment())
-                    .commit();
-        }
     }
 
+    public void submit(View v) {
+        EditText editHeight = (EditText) findViewById(R.id.editText);
+        EditText editWeight = (EditText) findViewById(R.id.editText2);
+        double height = Double.parseDouble(editHeight.getText().toString()) / 100;
+        double weight = Double.parseDouble(editWeight.getText().toString());
+        double bmi = weight /(height*height);
+        Toast.makeText(this, "" + bmi, 0).show();
+    }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
